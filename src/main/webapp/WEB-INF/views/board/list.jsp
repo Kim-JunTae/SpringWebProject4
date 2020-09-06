@@ -90,7 +90,7 @@
 		<div class="row pull-right">
 			<!-- 페이징  -->
 			<nav aria-label="Page navigation">
-				<ul class="pagination justify-content-end">
+				<ul class="pagination float-right">
 					<c:if test="${pageMaker.prev}">
 						<li class="paginate_button previous page-item">
 							<a class="page-link" href="${pageMaker.startPage -1}">Previous</a>

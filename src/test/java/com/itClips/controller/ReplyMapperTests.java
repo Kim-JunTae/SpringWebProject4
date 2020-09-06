@@ -25,7 +25,7 @@ public class ReplyMapperTests {
 	@Setter(onMethod_ = @Autowired)
 	private ReplyMapper mapper;
 	
-	@Test
+	/*@Test
 	public void testMapper() {
 		log.info(mapper);
 	}
@@ -77,5 +77,15 @@ public class ReplyMapperTests {
 		List<ReplyVO> replies = mapper.getListWithPaging(cri, bnoArr[0]);
 		
 		replies.forEach(reply -> log.info(reply));
+	}*/
+	
+	@Test
+	public void testList2() {
+		Criteria cri = new Criteria(2, 10);
+		
+		//344059L
+		List<ReplyVO> replies = mapper.getListWithPaging(cri, 344059L);
+		
+		replies.forEach(reply->log.info(reply));
 	}
 }

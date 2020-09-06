@@ -33,7 +33,13 @@
 			where bno = #{bno}
 			and rno > 0
 			and rownum <= #{cri.pageNum} * #{cri.amount}
-			) where rn > (#{cri.pageNum}-1) * #{cri.amout}
+			) where rn > (#{cri.pageNum}-1) * #{cri.amount}
+		]]>
+	</select>
+	
+	<select id="getCountByBno" resultType="int">
+		<![CDATA[
+		select count(rno) from tbl_reply where bno = #{bno}
 		]]>
 	</select>
 </mapper>
