@@ -151,6 +151,7 @@
   	<input type="hidden" name="type" value="${pageMaker.cri.type}">
   	<input type="hidden" name="keyword" value="${pageMaker.cri.keyword}">
   </form>
+ 
   <!-- /.content-wrapper -->
   <script type="text/javascript">
 	$(document).ready(function(){
